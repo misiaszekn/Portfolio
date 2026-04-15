@@ -2,7 +2,8 @@
 <html lang="pl">
 <head>
     <meta charset="UTF-8">
-    <title>Moje Portfolio</title>
+    <title>My portfoliod</title>
+
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -11,16 +12,32 @@
             padding: 40px;
         }
 
-        h1 {
-            color: #333;
-        }
-
         .container {
             max-width: 800px;
             margin: auto;
             background: white;
             padding: 20px;
             border-radius: 10px;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .intro {
+            color: #666;
+            font-size: 16px;
+            margin-bottom: 20px;
+
+            opacity: 0;
+            animation: fadeIn 2s ease forwards;
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+            }
         }
 
         a {
@@ -40,19 +57,32 @@
 </head>
 
 <body>
+
 <div class="container">
 
-    <h1>👋 Moje Portfolio</h1>
-    <p>Wybierz projekt:</p>
+    <h1>👋 My portfolio</h1>
+
+   <p class="intro">
+    Welcome to my portfolio! Here you’ll find a collection of projects in data analysis and machine learning,
+    created throughout different stages of my college journey and in different languages.
+
+    Some projects are still evolving and being improved along the way. Currently, I’m also exploring neural networks
+    and deep learning — exciting things are coming, just give me a bit of time :)
+
+    Enjoy exploring!
+   </p>
+
+    <p>Choose the project:</p>
 
     <a href="ml_python_project.html">ML Python Project</a>
     <a href="linear_models_insurance_company.html">Linear models</a>
-    <a href="statistical_models.html">Statistical Models</a>
-    <a href="ml_earthquake_predictions.html">Earthquake Predictions</a>
-    <a href="ml_phoneservice_comp.html">Phone Service Comparison</a>
+    <a href="statistical_models.html">Basic Statistical Models</a>
+    <a href="ml_earthquake_predictions.html">Earthquake Predictions- ML</a>
+    <a href="ml_phoneservice_comp.html">Clients In telecommunications company -ML</a>
     <a href="wind_turbin_analysis.html">Wind Turbine Analysis</a>
     <a href="hart_disease_analysis.html">Heart Disease Analysis</a>
 
 </div>
+
 </body>
 </html>
